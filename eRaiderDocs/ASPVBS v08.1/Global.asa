@@ -1,0 +1,17 @@
+<script language="VBScript" runat="Server">
+
+sub Application_OnStart
+end sub
+
+sub Session_OnStart
+  Session("eRaiderDispatchURL") = "http://spark.ttu.edu/ticketrequests/index.asp"
+  Session("eRaiderDBConnStr") = "Driver={SQL Server};Server=eraiderdb.net.ttu.edu;database=eRaider;User id=ESI_ATHL_ATHLTICKETREQUESTS;password=IqAwO3IpUlOqIvU"
+end sub
+
+sub Session_OnEnd
+end sub
+
+sub Applicatoin_OnEnd
+end sub
+
+</script>

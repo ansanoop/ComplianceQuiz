@@ -1,0 +1,75 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="Master_Default" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="cc1" Namespace="eRaider" Assembly="eRaiderSecurityHelper" %>
+<%@ Register TagPrefix="uc1" TagName="Menu" Src="~/Controls/MainMenu.ascx" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc2" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Recruits Call Report</title>
+    <link rel="Stylesheet" type="text/css" href="../Styles/styles.css" />
+    <link href="../Styles/menu.css" type="text/css" rel="Stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager2" runat="server" EnablePartialRendering="true">
+        </asp:ScriptManager>
+        
+        <div id="container" style="height:97%" >
+            <div id="header">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="width: 25%">
+                            <%--<table style="width: 100%; font-size: 11pt; color: White">--%>
+                            <table style="width: 100%; font-size: 10pt; color: White">
+                                <tr>
+                                    <td>
+                                        <img id="Img1" alt="DoubleT" src="~/Images/DoubleT.gif" height="70" runat="server" />
+                                    </td>
+                                    <td>
+                                        <span style="font-weight: bolder">Texas Tech University</span>
+                                        <br />
+                                        <span>Department of Intercollegiate Athletics Box 43021, Lubbock Texas 79409</span>
+                                        <br />
+                                        <span>Phone: (806)742-3355</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 25%; text-align:right; padding-right: 60px">
+                           <%-- <h1>
+                                Recruits Call Report</h1>--%>
+                                 <asp:Label ID="lblRecruitCall" runat="server" Font-Bold="true" Font-Size="Large" ForeColor="white" Text="Recruits Call Report"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <div style="margin:0px 0px 0px 0px">
+         <table>
+            <tr >
+            <td style="width:28%; "><asp:Label ID="lblEmpty" runat="server" ></asp:Label></td>
+            <td align="center" style="width:70%"  >
+                <uc1:Menu ID="Menu" runat="server" />
+            </td>
+            <td style="width:7%"><asp:Label ID="Label1" runat="server" ></asp:Label></td>
+                </tr>
+         </table>
+        </div>
+
+        <div id="wrapper" style="min-height:90%;">
+                <div id="content" >
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="footer" style="height:16px; text-align:center;clear:both; ">
+                <p style=" padding-top:0px;vertical-align:top">
+                    Athletics Department, Texas Tech University</p>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-size:13px;
+	color:#000;
+	/*font-family:Arial, Helvetica, sans-serif;*/
+    /*background-color: #ffffff; */
+	font-family:Corbel,'Myriad Pro',Arial, Helvetica, sans-serif;
+	background-image:url('polltekwp.png');
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	background-attachment:fixed;
+	overflow:hidden;
+}
+
+a { color: #000; text-decoration: none;}
+a:hover { text-decoration: underline; }
+
+#page{
+	width:100%;
+	height:100%;
+	margin:20px auto;
+}
+
+.block{
+    /*background-color: #ffffff; */
+	margin-bottom:25px;
+	padding:30px;
+}
+
+.block_main {
+    /*background-color: #ffffff; */
+    text-shadow: 1px 1px 0 black;
+    padding: 30px; 
+}
+
+.block_main p {
+    margin: 20px 0 20px 0;
+}
+
+h1{
+	font-size:35px;
+	font-weight:normal;
+	position:relative;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.rounded{
+	-moz-border-radius:12px;
+    -webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+.block_footer {
+    float: right;
+    position: relative;
+    padding: 10px; 
+    margin-top: 20px;
+}
+
+ul { list-style-type: none; }
+ul li { padding: 10px 0 10px 0; border-bottom: 1px solid #eee; font-size: 15px; }
+table { height:100%;}
+.name { font-weight: bold; width: 300px; display: inline-block; font-size: 20px;}
+.date { color: #000; font-family: Arial; font-size: 10px; margin-right: 10px; }
+.message { font-style: bold; margin-left: 0px; font-size: 30px; color: #0f0; }
+price { color: #000; font-size: 0px; }
+notready { color: #f00;}
+ready { color: #0f0;}
+.message { width: 300px; }
+
+
